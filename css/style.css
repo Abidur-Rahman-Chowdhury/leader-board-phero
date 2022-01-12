@@ -95,7 +95,9 @@ hr {
  .courses{
      display: grid;
      grid-template-columns: repeat(3,1fr);
-     grid-column-gap: 24px;
+     grid-column-gap: 60px;
+     width: 33%;
+    align-items: start;
  }
  .course .course-banner img{
      width: 224px;
@@ -127,7 +129,33 @@ hr {
      }
     .players,.courses{
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20%;
+        grid-column-gap: 145px;
+    
         
       }
+      .blogs{
+        grid-template-columns: repeat(1, 1fr);
+      }
  }
+ 
+ @media only screen and (max-width: 688px) {
+  .container{
+      width: 80%;
+  }
+  .player{
+    flex-direction: column;
+  }
+  /* .blogs{
+    display: flex;
+    flex-direction: column;
+  } */
+ .players,.courses{
+     grid-template-columns: repeat(1, 1fr);
+     grid-column-gap: 145px;
+ 
+     
+   }
+   .blogs{
+     grid-template-columns: repeat(1, 1fr);
+   }
+}
